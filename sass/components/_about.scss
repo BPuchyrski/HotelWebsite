@@ -1,0 +1,21 @@
+@use "../utils/colors.scss";
+.about-us {
+  background-color: colors.$blue;
+  padding-top: 20px;
+
+  &__header {
+    text-align: center;
+    color: colors.$light;
+    font-size: 24px;
+  }
+  &__text {
+    color: colors.$light;
+    margin-top: 20px;
+    text-align: justify;
+    padding: 0px 15px 20px;
+    line-height: 1.25;
+  }
+  &__img {
+    width: 100%;
+  }
+}
