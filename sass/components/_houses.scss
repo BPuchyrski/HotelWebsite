@@ -1,0 +1,11 @@
+@use "../utils/colors";
+
+.houses {
+  background-color: colors.$lightBeige;
+  color: colors.$blue;
+  padding-top: 50px;
+
+  &__header {
+    text-align: center;
+  }
+}
