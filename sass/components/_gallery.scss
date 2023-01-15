@@ -3,6 +3,8 @@
   background-color: colors.$blue;
   color: colors.$lightBeige;
   padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
 
   &__header {
     text-align: center;
@@ -12,5 +14,53 @@
   &__img {
     width: 100%;
     display: block;
+  }
+  &__btn {
+    margin-top: 10px;
+    text-decoration: none;
+    padding: 15px 40px;
+    background-color: colors.$lightBeige;
+    display: inline-block;
+    color: colors.$blue;
+    box-shadow: 18px 12px 0px 0px rgba(66, 68, 90, 1);
+    transition: box-shadow 400ms ease-in-out,
+      background-color 400ms ease-in-out 200ms;
+
+    &:hover {
+      box-shadow: 0px 0px 0px 0px;
+      background-color: rgba(66, 68, 90, 1);
+    }
+    &--center {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  &__banner {
+    overflow: hidden; /* ukrywa tekst po przekroczeniu granic baneru */
+    width: 100%; /* szerokość baneru */
+    // height: 50px; /* wysokość baneru */
+    // background-color: colors.$lightBeige;
+    &--text {
+      position: relative; /* pozycja tekstu względem baneru */
+      animation-name: slide; /* nazwa animacji */
+      animation-duration: 40s; /* czas trwania animacji */
+      animation-iteration-count: infinite; /* liczba powtórzeń animacji */
+      white-space: nowrap; /* tekst nie będzie rozdzielany na kilka linii */
+      font-size: 26px;
+      animation-timing-function: linear;
+      // color: colors.$blue;
+    }
+  }
+}
+
+@keyframes slide {
+  0% {
+    margin-left: -200%; /* tekst zacznie się poza granicami baneru */
+  }
+  50% {
+    margin-left: 0px; /* tekst zakończy się poza granicami baneru */
+  }
+  100% {
+    margin-left: -200%;
   }
 }
