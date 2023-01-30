@@ -20,4 +20,15 @@
     width: 100%;
     display: block;
   }
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.about-us__icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
