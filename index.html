@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hotel Name</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Paprika&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css-reset.css" />
     <link rel="stylesheet" href="mklb.css" />
     <link rel="stylesheet" href="./sass/main.min.css" />
@@ -23,14 +29,18 @@
       </nav>
       <header class="header">
         <div class="header-line">
-          <h2>Hotel Name</h2>
+          <div class="header-line__name">
+            <h2>B-Baltic</h2>
+            <p>Pokoje i apartamenty</p>
+          </div>
+
           <button class="header-nav__btn" type="button">X</button>
         </div>
       </header>
 
       <section class="banner">
         <h1>HOTEL NAME</h1>
-        <p>Domki nad morzem</p>
+        <p>Domki i noclegi w Pobierowie</p>
       </section>
 
       <section class="about-us">
@@ -38,7 +48,11 @@
           Zapraszamy do naszego ośrodka przez cały okres letni
         </h3>
         <div class="about-us__icon">
-          <img src="./imgs/icons/shell-60.png" alt="shell" />
+          <img
+            class="about-us__icon--size"
+            src="./imgs/icons/shell.png"
+            alt="shell"
+          />
         </div>
 
         <h4 class="about-us__header">
@@ -52,7 +66,11 @@
           czerwca, aż do września.
         </p>
         <div class="about-us__icon">
-          <img src="./imgs/icons/checklist-64.png" alt="checklist" />
+          <img
+            class="about-us__icon--size"
+            src="./imgs/icons/checklist.png"
+            alt="checklist"
+          />
         </div>
         <h4 class="about-us__header">JASNE WARUNKI POBYTU</h4>
         <p class="about-us__text">
@@ -60,7 +78,11 @@
           cenę pobytu. Nic Cię na miejscu nie zaskoczy.
         </p>
         <div class="about-us__icon">
-          <img src="./imgs/icons/map-64.png" alt="map" />
+          <img
+            class="about-us__icon--size"
+            src="./imgs/icons/map.png"
+            alt="map"
+          />
         </div>
         <h4 class="about-us__header">WSZĘDZIE BLISKO</h4>
         <p class="about-us__text">
@@ -68,7 +90,11 @@
           pyszną rybę też dojdziesz piechotą. Czego chcieć więcej?
         </p>
         <div class="about-us__icon">
-          <img src="./imgs/icons/calendar-64.png" alt="calendar" />
+          <img
+            class="about-us__icon--size"
+            src="./imgs/icons/calendar.png"
+            alt="calendar"
+          />
         </div>
         <h4 class="about-us__header">ELASTYCZNE TERMINY</h4>
         <p class="about-us__text">
@@ -86,7 +112,11 @@
       <section class="houses">
         <h3 class="houses__header">Nasze pokoje</h3>
         <div class="about-us__icon">
-          <img src="./imgs/icons/shell-60.png" alt="shell" />
+          <img
+            class="about-us__icon--size"
+            src="./imgs/icons/shell.png"
+            alt="shell"
+          />
         </div>
         <div class="houses__wraper">
           <div class="houses__img--container">
@@ -106,7 +136,7 @@
             <p class="houses__info">
               Komfortowy, nowo oddany domek/apartament 5-6-7 osobowy z kominkiem
               i ogrzewaniem podłogowym. Taras z meblami i grillem, łazienka,
-              pokój dzienny z narożnikiem (może służyć jako dodatkowe spanie )
+              pokój dzienny z narożnikiem (może służyć jako dodatkowe spanie)
               stolikiem kawowym i TV, kuchnia w pełnym wyposażeniu, na górze
               sypialnia 2 osobowa i 3 osobowa, w każdy pokój wyposażony w szafę
               , lampkę nocną, obok sypialni WC .
@@ -182,7 +212,11 @@
       <section class="map">
         <h3 class="map__header">Znajdziesz nas tutaj !!!</h3>
         <div class="about-us__icon">
-          <img src="./imgs/icons/shell-60.png" alt="shell" />
+          <img
+            class="about-us__icon--size"
+            src="./imgs/icons/shell.png"
+            alt="shell"
+          />
         </div>
         <iframe
           class="map__item"
